@@ -1,13 +1,21 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Photo = ({photo}) => {
+    const navigate = useNavigate();
+
+    const photosNavigate = () => {
+        navigate(`/photo/${id}`)
+    }
+
+
     const {id, url} = photo;
     return (
         <div>
             <p>{id}</p>
-            {url}
-            <Link to={`/photo/${id}`}>Show Detail</Link>
+            <p>{url}</p>
+            <Link to={`/photo/${id}`}>Show Detail</Link><br></br>
+            <button onClick={photosNavigate}>click me</button>
         </div>
     );
 };

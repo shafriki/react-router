@@ -6,6 +6,8 @@ const Posts = () => {
 
     const posts = useLoaderData()
 
+    
+
     return (
         <div>
             <h3>Totoal Posts:{posts.length}</h3>

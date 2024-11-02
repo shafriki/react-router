@@ -17,11 +17,13 @@ import Comments from './components/Comments';
 import CommentDetails from './components/CommentDetails';
 import Photos from './components/Photos';
 import PhotoDetail from './components/PhotoDetail';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
     {
       path: '/about',
