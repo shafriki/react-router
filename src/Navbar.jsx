@@ -10,6 +10,8 @@ const Navbar = () => {
                 <Link to='/users' >Users</Link>
                 <Link to='/posts'>Posts</Link>
                 <Link to='/comments'>Comments</Link>
+                <Link to ='/photos'>Photos</Link>
+
             </nav>
         </div>
     );
